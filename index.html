@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .textboxs{
+        display: flex;
+        height: 200px;
+        width: 400px;
+        font-size: 50px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        color: white;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        height:700px;
+        width:1300px;
+        align-items: center;
+    }
+    .mainframe{
+        display: flex;
+        flex-direction: column;
+        height:700px;
+        width:400px;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 12px;
+        justify-content: space-between;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        gap:20px
+    }
+    .buttons1
+    {
+        height:80px;
+        width:80px;
+        border-radius: 50%;
+        font-size: 50px;
+        background-color: rgb(197, 194, 194);
+        color: white;
+        text-align: center;
+    }
+    .buttons2
+    {
+        height:80px;
+        color: white;
+        width:80px;
+        font-size: 50px;
+        border-radius: 50%;
+        background-color: rgb(48, 47, 47);
+        text-align: center;
+    }
+    .buttons3
+    {
+        height:80px;
+        width:80px;
+        color: white;
+        font-size: 50px;
+        border-radius: 50%;
+        background-color: orange;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        let result_temp=0;;
+        let cnt=0;
+        let elem=document.getElementById('123');
+        let firstNumber="";
+        let operator="";
+        let secondNumber="";
+        let last_operator="";
+        function compute(elem){
+
+            if(elem=="C"||elem=="R")
+            {
+                location.reload();
+            }
+            else if(operator==""&&parseInt(elem)!=NaN&&((parseInt(elem)>=0&&parseInt(elem)<=9)||elem=='.'))
+            {
+                console.log(elem);
+                firstNumber=firstNumber+elem;
+            }
+            else if(operator!=""&&((parseInt(elem)>=0&&parseInt(elem)<=9)||elem=='.'))
+            {
+                console.log(elem);
+                secondNumber=secondNumber+elem;
+            }
+            else
+            {
+                operator=elem;
+                if(operator=='=')
+                {   
+                    console.log(elem);
+                    if(firstNumber!=""&&secondNumber!="")
+                    {
+                        if(last_operator=='+')
+                            document.getElementById('res').innerHTML=parseFloat(firstNumber)+parseFloat(secondNumber);
+                        else if(last_operator=='-')
+                            document.getElementById('res').innerHTML=parseFloat(firstNumber)-parseFloat(secondNumber);
+                        else if(last_operator=='X')
+                            document.getElementById('res').innerHTML=parseFloat(firstNumber)*parseFloat(secondNumber);
+                        else if(last_operator=='÷')
+                        {
+                            if(parseFloat(secondNumber)=='0')
+                            {
+                                document.getElementById('res').innerHTML="cannot divide by zero";
+                            }
+                            document.getElementById('res').innerHTML=parseFloat(firstNumber)/parseFloat(secondNumber);
+                        }
+                        else if(last_operator=='%')
+                            document.getElementById('res').innerHTML=parseFloat(firstNumber)%parseFloat(secondNumber);
+                        else
+                            document.getElementById('res').innerHTML=parseFloat(firstNumber)+parseFloat(secondNumber);
+                    }
+                    else    
+                        document.getElementById('res').innerHTML=parseFloat(firstNumber);
+                }
+                else if(firstNumber!=""&&secondNumber!="")
+                {
+                    console.log(elem);
+                    if(operator=='+')
+                    {
+                        firstNumber=parseFloat(firstNumber)+parseFloat(secondNumber);
+                        secondNumber="";
+                    }
+                    else if(operator=='X')
+                    {
+                        firstNumber=parseFloat(firstNumber)*parseFloat(secondNumber);
+                        secondNumber="";
+                    }
+                    else if(operator=='÷')
+                    {
+                        if(parseFloat(secondNumber)=='0')
+                        {
+                            document.getElementById('res').innerHTML="cannot divide by zero";
+                        }
+                        firstNumber=parseFloat(firstNumber)/parseFloat(secondNumber);
+                        secondNumber="";
+                    }
+                    else if(operator=='-')
+                    {
+                        firstNumber=parseFloat(firstNumber)-parseFloat(secondNumber);
+                        secondNumber="";
+                    }
+                    else if(operator=='%')
+                    {
+                        firstNumber=parseFloat(firstNumber)%parseFloat(secondNumber);
+                        secondNumber="";   
+                    }
+                }
+                last_operator=operator;
+
+            }
+        }
+    </script>
+    <div class="mainframe">
+        <div class="textboxs" id="res">
+            enter your calculations
+        </div>
+        <div class="buttons">
+            <div class="buttons1" id="123" onclick="compute('C')">C</div>
+            <div class="buttons1" id="123" onclick="compute('+')">+/-</div>
+            <div class="buttons1" id="123" onclick="compute('%')">%</div>
+            <div class="buttons3" id="123" onclick="compute('÷')">÷</div>
+        </div>
+        <div class="buttons">
+            <div class="buttons2" id="123" onclick="compute('7')">7</div>
+            <div class="buttons2" id="123" onclick="compute('8')">8</div>
+            <div class="buttons2" id="123" onclick="compute('9')">9</div>
+            <div class="buttons3" id="123" onclick="compute('X')">X</div>
+        </div>
+        <div class="buttons">
+            <div class="buttons2" id="123" onclick="compute('4')">4</div>
+            <div class="buttons2" id="123" onclick="compute('5')">5</div>
+            <div class="buttons2" id="123" onclick="compute('6')">6</div>
+            <div class="buttons3" id="123" onclick="compute('-')">-</div>
+        </div>
+        <div class="buttons">
+            <div class="buttons2" id="123" onclick="compute('1')">1</div>
+            <div class="buttons2" id="123" onclick="compute('2')">2</div>
+            <div class="buttons2" id="123" onclick="compute('3')">3</div>
+            <div class="buttons3" id="123" onclick="compute('+')">+</div>
+        </div>
+        <div class="buttons">
+            <div class="buttons2" id="123" onclick="compute('0')">0</div>
+            <div class="buttons2" id="123" onclick="compute('R')">R</div>
+            <div class="buttons2" id="123" onclick="compute('.')">.</div>
+            <div class="buttons3" id="123" onclick="compute('=')">=</div>
+        </div>
+       
+    </div>
+</body>
+</html>
