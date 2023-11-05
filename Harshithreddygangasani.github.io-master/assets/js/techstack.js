@@ -5,16 +5,6 @@ AOS.init();
 const techStackCards = document.querySelector(".techstack-box");
 const techStack = [
   {
-    langImage: "assets/images/techstack-page/html.png",
-    langName: "HyperText Markup Language",
-    langDesc: "<li>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/css.png",
-    langName: "Cascading Style Sheets",
-    langDesc: "<li>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML</li>",
-  },
-  {
     langImage: "assets/images/techstack-page/javascript.png",
     langName: "JavaScript",
     langDesc: "<li>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS</li>",
@@ -28,6 +18,36 @@ const techStack = [
     langImage: "assets/images/techstack-page/python.png",
     langName: "Python",
     langDesc: "<li>Python is an interpreted high-level general-purpose programming language</li>",
+  },
+  {
+    langImage:"assets/images/techstack-page/docker.png",
+    langName:"Docker",
+    langDesc:"<li>Docker is a platform for developing, shipping, and running applications in lightweight, containerized environments, making it easier to manage and deploy software.</li>",
+  },
+  {
+    langImage:"assets/images/techstack-page/jenkins.png",
+    langName:"Jenkins",
+    langDesc:"<li>Jenkins is an open-source automation server that facilitates continuous integration and continuous delivery (CI/CD) by automating software development processes, such as building, testing, and deployment.</li>",
+  },
+  {
+    langImage:"assets/images/techstack-page/kubernetes.png",
+    langName:"Kubernetes",
+    langDesc:"<li>Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications across clusters of servers, simplifying container operations.</li>",
+  },
+  {
+    langImage:"assets/images/techstack-page/maven.svg",
+    langName:"Maven",
+    langDesc:"<li>Apache Maven is a build automation tool used for managing and building Java projects. It simplifies project configuration and dependencies, making it easier to manage and build Java applications.</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/html.png",
+    langName: "HyperText Markup Language",
+    langDesc: "<li>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/css.png",
+    langName: "Cascading Style Sheets",
+    langDesc: "<li>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML</li>",
   },
   {
     langImage: "assets/images/techstack-page/cpp.png",
@@ -53,6 +73,21 @@ const techStack = [
     langImage:"assets/images/techstack-page/c.png",
     langName:"C",
     langDesc:"<li>C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system</li>"
+  },
+  {
+    langImage:"assets/images/techstack-page/aws.png",
+    langName:"AWS",
+    langDesc:"<li>Amazon Web Services (AWS) is a comprehensive cloud computing platform offering a wide range of on-demand services for businesses and developers to build and scale applications and infrastructure.</li>",
+  },
+  {
+    langImage:"assets/images/techstack-page/terraform.png",
+    langName:"Terraform",
+    langDesc:"<li>Terraform is an open-source infrastructure as code (IaC) tool that allows users to define and provision infrastructure resources in a declarative configuration language, simplifying infrastructure management and automation.</li>",
+  },
+  {
+    langImage:"assets/images/techstack-page/ansible.png",
+    langName:"Ansible",
+    langDesc:"<li>Ansible is an open-source automation tool that simplifies IT tasks by providing a platform for automating application deployment, configuration management, and task automation without the need for agents on target systems.</li>",
   },
 ];
 

@@ -6,68 +6,34 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
-    title: "Experimental assessment of the state of the art on classification",
-    cardImage: "assets/images/project-page/classification.png",
-    description: "Comparing various classification algorithms",
-    Previewlink: "https://github.com/villurignanesh/Experimental-assessment-of-the-state-of-the-art-on-classification",
-    Githublink: "https://github.com/villurignanesh/Experimental-assessment-of-the-state-of-the-art-on-classification",
+    title: "Secure Messaging Application",
+    cardImage: "assets/images/project-page/messages.png",
+    description: "A secure messaging app offering using React, Express, MongoDB, with robust encryption and decryption algorithms, including the Advanced Encryption Standard ",
+    Previewlink: "https://github.com/harshithreddy8899",
+    Githublink: "https://github.com/harshithreddy8899",
   },
   {
-    title: "Decision Tree Classification Algorithms",
-    cardImage: "assets/images/project-page/decisiontree.png",
-    description: "This project the implemention of the Decision Tree Induction algorithm for classification using python on 15 benchmark datasets",
-    Previewlink: "https://github.com/villurignanesh/Decision-Tree-Classification",
-    Githublink: "https://github.com/villurignanesh/Decision-Tree-Classification",
+    title: "Library app using React Node and MongoDB",
+    cardImage: "assets/images/project-page/library.png",
+    description: "Library Web App using Express, NodeJS and MongoDB",
+    Previewlink: "https://github.com/harshithreddy8899",
+    Githublink: "https://github.com/harshithreddy8899",
   },
   {
-    title: "FPGrowth Algorithm",
-    cardImage: "assets/images/project-page/fpgrowth.png",
-    description: "This project shows how I used Python to construct the FPGrowth algorithm on 20 Benchmark test datasets",
-    Previewlink: "https://github.com/villurignanesh/FPGrowth",
-    Githublink: "https://github.com/villurignanesh/FPGrowth",
+    title: "A Photo Tagging App",
+    cardImage: "assets/images/project-page/photo.png",
+    description: "Photo Tagging App for character identification in images, combining engaging features and efficient backend management.",
+    Previewlink: "https://github.com/harshithreddy8899",
+    Githublink: "https://github.com/harshithreddy8899",
   },
   {
-    title: "HOLA ENTERPRISE DESIGNER TOOL",
-    cardImage: "assets/images/project-page/hola.jpeg",
-    description: "Created a tool which can generate customizable videos using different Web Based Components",
+    title: "A REST API for Blogs",
+    cardImage: "assets/images/project-page/blog.png",
+    description: "Developed a RESTful Blog API for efficient content management, providing users with the ability to read, create, update, and delete blog posts using standard HTTP requests",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "https://www.holaenterprise.com/",
-    Githublink: "https://github.com/villurignanesh/Building-Components-of-Hola-Enterprise",
-  },
-  {
-    title: "Forecasting High School Dropouts %",
-    cardImage: "assets/images/project-page/hs.png",
-    description: "Used a python module named Prophet, Which provides a practical approach to recasting ”at scale”",
-    Previewlink: "https://github.com/villurignanesh/Forecasting-Future-trends-using-FBProphet",
-    Githublink: "https://github.com/villurignanesh/Forecasting-Future-trends-using-FBProphet",
-  },
-  {
-    title: "Tic Tac Toe Game",
-    cardImage: "assets/images/project-page/tic-tac-toe.png",
-    description:
-      "Tested a React Tic Tac Toe Game using Jest and React Testing Library.",
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "https://github.com/villurignanesh/Tic-Tac-Toe",
-    Githublink: "https://github.com/villurignanesh/Tic-Tac-Toe",
-  },
-  {
-    title: "Battery Life Calculator",
-    cardImage: "assets/images/project-page/battery.png",
-    description: "Built battery life calculator using Python.",
-    tagimg:
-      "https://camo.githubusercontent.com/888e388801f947dec7c3d843942c277af25fe2b1aed1821542c4e711f210312a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67",
-    Previewlink: "https://github.com/villurignanesh/Battery-Calculator",
-    Githublink: "https://github.com/villurignanesh/Battery-Calculator",
-  },
-  {
-    title: "Movie Recommendation Engine",
-    cardImage: "assets/images/project-page/music.jpg",
-    description: "Built using Python.",
-    tagimg:
-      "https://camo.githubusercontent.com/888e388801f947dec7c3d843942c277af25fe2b1aed1821542c4e711f210312a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67",
-    Previewlink: "",
-    Githublink: "",
-  },
+    Previewlink: "https://github.com/harshithreddy8899",
+    Githublink: "https://github.com/harshithreddy8899",
+  }
 ];
 
 // function for rendering project cards data
